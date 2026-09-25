@@ -490,27 +490,13 @@ export default function OurPhilosophy() {
 
             <div className="sv-fade sv-d3 mt-1 flex flex-wrap gap-3">
               <a
-                href="#formula"
+                href="/"
                 className="sv-shine relative inline-flex items-center overflow-hidden rounded-full bg-[#2d1557] px-6 py-3.5 text-[13px] font-medium text-white transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(38,36,79,.25)] sm:px-8 sm:py-[18px] sm:text-[15px]"
               >
-                <span className="relative z-10">Explore the formula</span>
+                <span className="relative z-10">Join Waitlist</span>
               </a>
 
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 rounded-full border-[1.5px] border-[#26244F] bg-transparent px-5 py-3 text-[13px] font-medium transition hover:-translate-y-0.5 sm:px-7 sm:py-4 sm:text-[15px]"
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path d="M7 4l13 8-13 8z" />
-                </svg>
-                Watch the film
-              </a>
+              
             </div>
           </div>
 
@@ -737,10 +723,10 @@ export default function OurPhilosophy() {
             </p>
 
             <a
-              href="#"
+              href="/"
               className="self-start border-b-[1.5px] border-[#26244F] pb-1 text-[13px] font-medium transition hover:tracking-[.02em] sm:text-[15px]"
             >
-              See our ingredient list →
+              Join Waitlist →
             </a>
           </div>
 
