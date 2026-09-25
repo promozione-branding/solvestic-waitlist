@@ -12,12 +12,12 @@ export default function Home() {
     <div>
       <Hero />
       <Problems />
-      <FormSection />
       <SkinConcerns />
       <Founding100Section />
       <Certifications />
       <SocialCTA />
       <AirPodsGiveaway />
+      <FormSection />
     </div>
   );
 }

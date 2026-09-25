@@ -435,21 +435,17 @@ export default function Hero() {
                     text-[clamp(3.5rem,8vw,7rem)]
                     font-semibold
                     uppercase
-                    leading-[0.82]
+                    leading-[0.9]
                     tracking-[-0.03em]
-                    text-[#2D1557]
+                    text-white
                 "
                                 >
                                     Your Beauty
                                     <br />
 
-                                    <span className="text-[#7D45C2]">
-                                        Has No
+                                    <span className="">
+                                        Has No  Limits.
                                     </span>
-
-                                    <br />
-
-                                    Limits.
                                 </motion.h2>
 
                                 {/* COUNTDOWN */}

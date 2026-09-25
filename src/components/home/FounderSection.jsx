@@ -148,7 +148,7 @@ export default function Founding100Section() {
 
 
                         {/* CTA */}
-                        <div className="relative shrink-0 lg:pr-2">
+                        <div className="relative shrink-0 lg:pr-30">
 
                             <a href="#form"
                                 type="button"
