@@ -367,13 +367,13 @@ export default function OurPhilosophy() {
       `}</style>
 
       {/* Announcement bar */}
-      <div className="flex h-10 items-center overflow-hidden bg-[#7d45c2] text-[11px] uppercase tracking-[.08em] text-[#EEEFF8] sm:text-[13px]">
+      {/* <div className="flex h-10 items-center overflow-hidden bg-[#7d45c2] text-[11px] uppercase tracking-[.08em] text-[#EEEFF8] sm:text-[13px]">
         <Marquee
           items={ANNOUNCEMENTS}
           renderItem={(t) => <span>{t}</span>}
           className="sv-marquee-track sv-marquee--slow"
         />
-      </div>
+      </div> */}
 
       {/* Header */}
       {/* <header className="relative flex h-[72px] items-center justify-between border-b border-[#DCDDEF] px-4 sm:h-[82px] sm:px-8 lg:h-[88px] lg:px-[80px]">
@@ -471,13 +471,13 @@ export default function OurPhilosophy() {
 
       <main>
         {/* Hero */}
-        <section className="relative grid min-h-[600px] grid-cols-1 items-center gap-10 overflow-hidden bg-[#F0EBF9] px-5 py-14 sm:px-10 lg:min-h-[680px] lg:grid-cols-2 lg:gap-16 lg:px-[80px] lg:py-[70px]">
+        <section className="relative grid min-h-[600px] grid-cols-1 mt-20 items-center gap-10 overflow-hidden bg-[#F0EBF9] px-5 py-14 sm:px-10 lg:min-h-[620px] lg:grid-cols-2 lg:gap-16 lg:px-[80px] lg:py-[70px]">
           <div className="relative z-10 flex flex-col gap-6 lg:gap-7">
             <div className="sv-fade text-[10px] font-bold uppercase tracking-[.22em] text-[#4B4886] sm:text-[13px]">
               Our Philosophy
             </div>
 
-            <h1 className="sv-fade sv-d1 max-w-[720px] text-black    font-light leading-[1.02] tracking-[-.02em] text-[44px] sm:text-[54px] lg:text-[clamp(44px,5.3vw,76px)]">
+            <h1 className="sv-fade sv-d1 max-w-[720px] text-[#ac4cd1]    font-light leading-[1.02] tracking-[-.02em] text-[44px] sm:text-[54px] lg:text-[clamp(44px,5.3vw,76px)]">
               Honest science. <em className="font-medium">Visible results.</em>
             </h1>
 
@@ -490,7 +490,7 @@ export default function OurPhilosophy() {
             <div className="sv-fade sv-d3 mt-1 flex flex-wrap gap-3">
               <a
                 href="#formula"
-                className="sv-shine relative inline-flex items-center overflow-hidden rounded-full bg-[#7d45c2] px-6 py-3.5 text-[13px] font-medium text-white transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(38,36,79,.25)] sm:px-8 sm:py-[18px] sm:text-[15px]"
+                className="sv-shine relative inline-flex items-center overflow-hidden rounded-full bg-[#2d1557] px-6 py-3.5 text-[13px] font-medium text-white transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(38,36,79,.25)] sm:px-8 sm:py-[18px] sm:text-[15px]"
               >
                 <span className="relative z-10">Explore the formula</span>
               </a>
@@ -515,7 +515,7 @@ export default function OurPhilosophy() {
 
           <div className="sv-fade sv-d2 relative mx-auto w-full max-w-[700px] lg:mx-0">
             <div className="sv-float-slow">
-              <div className="relative h-[420px] overflow-hidden rounded-[210px_210px_24px_24px] bg-[#7b44bf] sm:h-[500px] lg:h-[540px]">
+              <div className="relative h-[420px] overflow-hidden rounded-[210px_210px_24px_24px] bg-[#2d1557] sm:h-[500px] lg:h-[540px]">
                 <div className="sv-zoom absolute inset-0 flex h-full w-full items-center justify-center">
 
                      <svg
