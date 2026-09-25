@@ -340,7 +340,7 @@ export default function Hero() {
                             className="
                 absolute
                 inset-0
-                bg-[#F7F2FC]/25
+                bg-black/25
             "
                         />
 
