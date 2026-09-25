@@ -195,8 +195,8 @@ export default function Certifications() {
                                 spaceBetween: 20,
                             },
                             1024: {
-                                slidesPerView: 3,
-                                spaceBetween: 30,
+                                slidesPerView: 4,
+                                spaceBetween: 20,
                             },
                         }}
                         className="certification-swiper !overflow-visible"
@@ -237,6 +237,7 @@ export default function Certifications() {
                                         hover:-translate-y-2
                                         hover:shadow-[0_30px_80px_rgba(60,20,100,0.14)]
                                         h-full
+                                        w-60
                                         md:p-4
                                     "
                                 >
@@ -282,7 +283,7 @@ export default function Certifications() {
                                     {/* ICON */}
                                     {/* ================================= */}
 
-                                    <div className="relative mt-1 flex h-[120px] items-center justify-center">
+                                    <div className="relative mt-1 flex h-[100px] items-center justify-center">
 
                                         <motion.img
                                             src={certificate.image}
@@ -329,22 +330,12 @@ export default function Certifications() {
                                                 leading-[0.95]
                                                 tracking-tight
                                                 text-[#2D1557]
+                                                text-center
                                                 md:text-2xl
                                             "
                                         >
                                             {certificate.title}
                                         </h3>
-
-                                        <p
-                                            className="
-                                                text-xs
-                                                leading-6
-                                                text-[#563477]/65
-                                            "
-                                        >
-                                            {certificate.description}
-                                        </p>
-
                                     </div>
 
                                 </motion.div>
