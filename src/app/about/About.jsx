@@ -4,13 +4,13 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="w-full bg-white text-[#26244F]">
+    <section className="w-full bg-white mt-28 text-[#26244F]">
 
       {/* =====================================================
           HERO / INTRO
       ===================================================== */}
       <div className="px-3 pt-3 sm:px-5 sm:pt-5">
-        <div className="relative min-h-[520px] overflow-hidden rounded-[24px] bg-[#7b44bf] sm:min-h-[530px] ">
+        <div className="relative min-h-[520px] overflow-hidden rounded-[24px] bg-[#7b44bf] sm:min-h-[510px] ">
 
           {/* Replace with your Solvestic image */}
           <img
@@ -199,7 +199,7 @@ export default function About() {
             {/* Founder image */}
             <div className="min-h-[480px] bg-[#E5E2E7] lg:min-h-[680px]">
               <img
-                src="/images/sneha-prince.jpg"
+                src="/about4.jpeg"
                 alt="Sneha Suman and Prince Verma"
                 className="h-full w-full object-cover"
               />

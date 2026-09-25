@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 const ANNOUNCEMENTS = [
-    "FREE AIRPODS",
+    "FREE GIFT HAMPERS",
     "SULPHATE & PARABEN FREE",
     "CRUELTY-FREE",
     "FDA-APPROVED",
