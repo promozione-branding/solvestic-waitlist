@@ -6,7 +6,7 @@ import {
     useScroll,
     useTransform,
 } from "framer-motion";
-
+import { Building2, Clock3, MapPin } from "lucide-react";
 import {
     FaInstagram,
     FaFacebookF,
@@ -122,7 +122,7 @@ export default function Footer() {
                     "
                 >
                     <img
-                        src="/ChatGPT Image Sep 25, 2026, 06_04_10 PM.png"
+                        src="/solvestic.png"
                         alt="Solvestic"
                         className="
                             h-auto
@@ -414,57 +414,76 @@ export default function Footer() {
                         {/* ===================================== */}
                         {/* OFFICIAL / SUPPORT */}
                         {/* ===================================== */}
+                        <div className="p-8 md:p-10 lg:p-12">
 
-                        <div
-                            className="
-                                p-8
-                                md:p-10
-                                lg:p-12
-                            "
-                        >
+                            <div className="space-y-7">
 
-                            <h3
-                                className="
-                                    text-sm
-                                    font-bold
-                                    uppercase
-                                    tracking-[0.15em]
-                                    text-white
-                                "
-                            >
-                                Official
-                            </h3>
+                                {/* Address & Support */}
+                                <div className="space-y-8">
 
-                            <nav className="mt-7 flex flex-col gap-5">
+                                    {/* Address */}
+                                    <div className="flex items-start gap-4">
+                                        <div
+                                            className="
+                flex h-11 w-11 shrink-0 items-center justify-center
+                rounded-full bg-white/10 text-white
+                ring-1 ring-white/10
+            "
+                                        >
+                                            <MapPin size={20} strokeWidth={1.8} />
+                                        </div>
 
-                                <Link
-                                    href="/our-philosophy"
-                                    className="
-                                        text-base
-                                        text-white/80
-                                        transition-colors
-                                        hover:text-white
-                                    "
-                                >
-                                    Our Philosophy
-                                </Link>
+                                        <div>
+                                            <p className="text-xs font-medium uppercase tracking-[0.12em] text-white/90">
+                                                Office Address
+                                            </p>
+                                            <p className="mt-1 text-base font-semibold leading-relaxed text-white">
+                                                Solvestic Wellness Private Limited
+                                            </p>
 
-                                <Link
-                                    href="/about"
-                                    className="
-                                        text-base
-                                         text-white/80
-                                        transition-colors
-                                        hover:text-white
-                                    "
-                                >
-                                    About Us
-                                </Link>
-                            </nav>
+                                            <p className="mt-2 max-w-md text-sm leading-7 text-white">
+                                                Office No. 1001, Pearls Best Heights-2,
+                                                <br />
+                                                Plot-C9, NSP, Pitampura,
+                                                <br />
+                                                Delhi – 110034
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    {/* Support */}
+                                    <div className="flex items-start gap-4">
+                                        <div
+                                            className="
+                flex h-11 w-11 shrink-0 items-center justify-center
+                rounded-full bg-white/10 text-white
+                ring-1 ring-white/10
+            "
+                                        >
+                                            <Clock3 size={20} strokeWidth={1.8} />
+                                        </div>
+
+                                        <div>
+                                            <p className="text-xs font-medium uppercase tracking-[0.12em] text-white/90">
+                                                Support
+                                            </p>
+
+                                            <p className="mt-1 text-sm leading-7 text-white">
+                                                We’re here Monday – Saturday
+                                                <br />
+                                                <span className="text-white/75">
+                                                    9:00 AM – 6:00 PM
+                                                </span>
+                                            </p>
+
+                                            <p className="mt-1">Drop us a note anytime.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
-
                 </div>
 
             </section>

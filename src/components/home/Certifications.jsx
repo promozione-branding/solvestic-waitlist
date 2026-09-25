@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -177,10 +177,14 @@ export default function Certifications() {
                 <div className="relative">
 
                     <Swiper
-                        modules={[Navigation]}
+                        modules={[Navigation, Autoplay]}
                         navigation={{
                             prevEl: ".cert-prev",
                             nextEl: ".cert-next",
+                        }}
+                        autoplay={{
+                            delay: 7000,
+                            disableOnInteraction: false,
                         }}
                         spaceBetween={18}
                         slidesPerView={1}
@@ -192,7 +196,7 @@ export default function Certifications() {
                             },
                             1024: {
                                 slidesPerView: 3,
-                                spaceBetween: 24,
+                                spaceBetween: 30,
                             },
                         }}
                         className="certification-swiper !overflow-visible"
@@ -233,7 +237,7 @@ export default function Certifications() {
                                         hover:-translate-y-2
                                         hover:shadow-[0_30px_80px_rgba(60,20,100,0.14)]
                                         h-full
-                                        md:p-6
+                                        md:p-4
                                     "
                                 >
 
@@ -278,7 +282,7 @@ export default function Certifications() {
                                     {/* ICON */}
                                     {/* ================================= */}
 
-                                    <div className="relative mt-2 flex h-[125px] items-center justify-center">
+                                    <div className="relative mt-1 flex h-[120px] items-center justify-center">
 
                                         <motion.img
                                             src={certificate.image}
@@ -325,7 +329,7 @@ export default function Certifications() {
                                                 leading-[0.95]
                                                 tracking-tight
                                                 text-[#2D1557]
-                                                md:text-3xl
+                                                md:text-2xl
                                             "
                                         >
                                             {certificate.title}
@@ -333,21 +337,7 @@ export default function Certifications() {
 
                                         <p
                                             className="
-                                                mt-2
                                                 text-xs
-                                                font-semibold
-                                                uppercase
-                                                tracking-[0.22em]
-                                                text-[#7D45C2]
-                                            "
-                                        >
-                                            {certificate.subtitle}
-                                        </p>
-
-                                        <p
-                                            className="
-                                                mt-2
-                                                text-sm
                                                 leading-6
                                                 text-[#563477]/65
                                             "
