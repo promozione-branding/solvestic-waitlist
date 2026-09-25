@@ -188,7 +188,7 @@ export default function Certifications() {
                         }}
                         spaceBetween={18}
                         slidesPerView={1}
-                        speed={800}
+                        speed={1500}
                         breakpoints={{
                             640: {
                                 slidesPerView: 2,
