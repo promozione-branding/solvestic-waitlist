@@ -2,6 +2,8 @@ import { Geist, Geist_Mono, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/main/SmoothScroll";
 import { Toaster } from "react-hot-toast";
+import Navbar from "@/components/main/Navbar";
+import Footer from "@/components/main/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,9 +34,11 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable}`}
     >
       <body>
+        <Navbar />
         <SmoothScroll />
         <Toaster />
         {children}
+        <Footer />
       </body>
     </html>
   );

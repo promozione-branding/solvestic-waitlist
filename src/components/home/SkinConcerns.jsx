@@ -52,8 +52,28 @@ export default function SkinConcerns() {
     };
 
     return (
-        <section
-            className="
+        <>
+            <div className="py-5 text-center border-t border-purple-100">
+                <span className="mb-3 inline-block rounded-full bg-purple-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-purple-600">
+                    Skin concerns
+                </span>
+
+                <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+                    What does your{" "}
+                    <span className="bg-gradient-to-r text-[#7D45C2] bg-clip-text">
+                        skin
+                    </span>{" "}
+                    need?
+                </h2>
+
+                <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-gray-500 sm:text-base">
+                    Every skin has a story. Discover targeted care designed to bring out
+                    your healthiest, most radiant skin.
+                </p>
+            </div>
+
+            <section
+                className="
                 relative
                 h-[90vh]
                 min-h-[500px]
@@ -61,69 +81,69 @@ export default function SkinConcerns() {
                 overflow-hidden
                 bg-[#F7F2FC]
             "
-            onMouseLeave={handleMouseLeave}
-        >
+                onMouseLeave={handleMouseLeave}
+            >
 
-            {/* ========================================= */}
-            {/* BACKGROUND IMAGE */}
-            {/* ========================================= */}
+                {/* ========================================= */}
+                {/* BACKGROUND IMAGE */}
+                {/* ========================================= */}
 
-            <AnimatePresence mode="sync">
-                <motion.div
-                    key={activeConcern.image}
-                    initial={{
-                        opacity: 0,
-                        scale: 1.04,
-                    }}
-                    animate={{
-                        opacity: 1,
-                        scale: 1,
-                    }}
-                    exit={{
-                        opacity: 0,
-                    }}
-                    transition={{
-                        opacity: {
-                            duration: 0.55,
-                            ease: "easeInOut",
-                        },
-                        scale: {
-                            duration: 1,
-                            ease: [0.22, 1, 0.36, 1],
-                        },
-                    }}
-                    className="absolute inset-0"
-                >
-                    <img
-                        src={activeConcern.image}
-                        alt={activeConcern.title}
-                        className="
+                <AnimatePresence mode="sync">
+                    <motion.div
+                        key={activeConcern.image}
+                        initial={{
+                            opacity: 0,
+                            scale: 1.04,
+                        }}
+                        animate={{
+                            opacity: 1,
+                            scale: 1,
+                        }}
+                        exit={{
+                            opacity: 0,
+                        }}
+                        transition={{
+                            opacity: {
+                                duration: 0.55,
+                                ease: "easeInOut",
+                            },
+                            scale: {
+                                duration: 1,
+                                ease: [0.22, 1, 0.36, 1],
+                            },
+                        }}
+                        className="absolute inset-0"
+                    >
+                        <img
+                            src={activeConcern.image}
+                            alt={activeConcern.title}
+                            className="
                             h-full
                             w-full
                             object-cover
                         "
-                    />
-                </motion.div>
-            </AnimatePresence>
+                        />
+                    </motion.div>
+                </AnimatePresence>
 
-            {/* ========================================= */}
-            {/* SOFT DARK OVERLAY */}
-            {/* ========================================= */}
+                {/* ========================================= */}
+                {/* SOFT DARK OVERLAY */}
+                {/* ========================================= */}
 
-            <div
-                className="
+                <div
+                    className="
                     absolute
                     inset-0
                     bg-black/15
                 "
-            />
+                />
 
-            {/* ========================================= */}
-            {/* PURPLE GRADIENT */}
-            {/* ========================================= */}
+                {/* ========================================= */}
+                {/* PURPLE GRADIENT */}
+                {/* ========================================= */}
 
-            <div
-                className="
+                <div
+                    className="
                     absolute
                     inset-0
                     bg-gradient-to-t
@@ -131,22 +151,22 @@ export default function SkinConcerns() {
                     via-transparent
                     to-black/10
                 "
-            />
+                />
 
-            {/* ========================================= */}
-            {/* CARDS */}
-            {/* ========================================= */}
+                {/* ========================================= */}
+                {/* CARDS */}
+                {/* ========================================= */}
 
-            <div className="relative z-10 flex h-full w-full">
+                <div className="relative z-10 flex h-full w-full">
 
-                {concerns.map((concern, index) => {
-                    const isHovered = hoveredIndex === index;
+                    {concerns.map((concern, index) => {
+                        const isHovered = hoveredIndex === index;
 
-                    return (
-                        <motion.div
-                            key={concern.id}
-                            onMouseEnter={() => handleMouseEnter(index)}
-                            className="
+                        return (
+                            <motion.div
+                                key={concern.id}
+                                onMouseEnter={() => handleMouseEnter(index)}
+                                className="
                                 relative
                                 h-full
                                 flex-1
@@ -156,42 +176,42 @@ export default function SkinConcerns() {
                                 border-white/20
                                 last:border-r-0
                             "
-                            animate={{
-                                flexGrow: isHovered ? 1.12 : 1,
-                            }}
-                            transition={{
-                                duration: 0.55,
-                                ease: [0.22, 1, 0.36, 1],
-                            }}
-                        >
-
-                            {/* ========================================= */}
-                            {/* HOVER PURPLE PANEL */}
-                            {/* ========================================= */}
-
-                            <motion.div
-                                initial={false}
                                 animate={{
-                                    opacity: isHovered ? 1 : 0,
+                                    flexGrow: isHovered ? 1.12 : 1,
                                 }}
                                 transition={{
-                                    duration: 0.4,
-                                    ease: "easeOut",
+                                    duration: 0.55,
+                                    ease: [0.22, 1, 0.36, 1],
                                 }}
-                                className="
+                            >
+
+                                {/* ========================================= */}
+                                {/* HOVER PURPLE PANEL */}
+                                {/* ========================================= */}
+
+                                <motion.div
+                                    initial={false}
+                                    animate={{
+                                        opacity: isHovered ? 1 : 0,
+                                    }}
+                                    transition={{
+                                        duration: 0.4,
+                                        ease: "easeOut",
+                                    }}
+                                    className="
                                     absolute
                                     inset-0
                                     bg-[#7D45C2]/65
                                     backdrop-blur-[2px]
                                 "
-                            />
+                                />
 
-                            {/* ========================================= */}
-                            {/* CARD CONTENT */}
-                            {/* ========================================= */}
+                                {/* ========================================= */}
+                                {/* CARD CONTENT */}
+                                {/* ========================================= */}
 
-                            <div
-                                className="
+                                <div
+                                    className="
                                     relative
                                     flex
                                     h-full
@@ -201,43 +221,43 @@ export default function SkinConcerns() {
                                     md:p-8
                                     lg:p-10
                                 "
-                            >
+                                >
 
-                                {/* NUMBER */}
-                                <motion.div
-                                    animate={{
-                                        color: isHovered
-                                            ? "#FFFFFF"
-                                            : "#FFFFFF",
-                                        y: isHovered ? 0 : 0,
-                                    }}
-                                    className="
+                                    {/* NUMBER */}
+                                    <motion.div
+                                        animate={{
+                                            color: isHovered
+                                                ? "#FFFFFF"
+                                                : "#FFFFFF",
+                                            y: isHovered ? 0 : 0,
+                                        }}
+                                        className="
                                         font-heading
                                         text-4xl
                                         font-medium
                                         leading-none
                                         md:text-5xl
                                     "
-                                >
-                                    {String(concern.id).padStart(2, "0")}
-                                </motion.div>
+                                    >
+                                        {String(concern.id).padStart(2, "0")}
+                                    </motion.div>
 
-                                {/* ========================================= */}
-                                {/* BOTTOM */}
-                                {/* ========================================= */}
+                                    {/* ========================================= */}
+                                    {/* BOTTOM */}
+                                    {/* ========================================= */}
 
-                                <div className="pb-2">
+                                    <div className="pb-2">
 
-                                    {/* TITLE */}
-                                    <motion.h3
-                                        animate={{
-                                            y: isHovered ? -5 : 0,
-                                        }}
-                                        transition={{
-                                            duration: 0.4,
-                                            ease: [0.22, 1, 0.36, 1],
-                                        }}
-                                        className="
+                                        {/* TITLE */}
+                                        <motion.h3
+                                            animate={{
+                                                y: isHovered ? -5 : 0,
+                                            }}
+                                            transition={{
+                                                duration: 0.4,
+                                                ease: [0.22, 1, 0.36, 1],
+                                            }}
+                                            className="
                                             max-w-[280px]
                                             font-heading
                                             text-xl
@@ -248,40 +268,40 @@ export default function SkinConcerns() {
                                             md:text-2xl
                                             lg:text-[28px]
                                         "
-                                    >
-                                        {concern.title}
-                                    </motion.h3>
+                                        >
+                                            {concern.title}
+                                        </motion.h3>
 
-                                    {/* ================================= */}
-                                    {/* DESCRIPTION ONLY ON HOVER */}
-                                    {/* ================================= */}
+                                        {/* ================================= */}
+                                        {/* DESCRIPTION ONLY ON HOVER */}
+                                        {/* ================================= */}
 
-                                    <AnimatePresence initial={false}>
-                                        {isHovered && (
-                                            <motion.div
-                                                initial={{
-                                                    opacity: 0,
-                                                    height: 0,
-                                                    y: 20,
-                                                }}
-                                                animate={{
-                                                    opacity: 1,
-                                                    height: "auto",
-                                                    y: 0,
-                                                }}
-                                                exit={{
-                                                    opacity: 0,
-                                                    height: 0,
-                                                    y: 10,
-                                                }}
-                                                transition={{
-                                                    duration: 0.45,
-                                                    ease: [0.22, 1, 0.36, 1],
-                                                }}
-                                                className="overflow-hidden"
-                                            >
-                                                <p
-                                                    className="
+                                        <AnimatePresence initial={false}>
+                                            {isHovered && (
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        height: 0,
+                                                        y: 20,
+                                                    }}
+                                                    animate={{
+                                                        opacity: 1,
+                                                        height: "auto",
+                                                        y: 0,
+                                                    }}
+                                                    exit={{
+                                                        opacity: 0,
+                                                        height: 0,
+                                                        y: 10,
+                                                    }}
+                                                    transition={{
+                                                        duration: 0.45,
+                                                        ease: [0.22, 1, 0.36, 1],
+                                                    }}
+                                                    className="overflow-hidden"
+                                                >
+                                                    <p
+                                                        className="
                                                         mt-5
                                                         max-w-[340px]
                                                         text-sm
@@ -290,26 +310,26 @@ export default function SkinConcerns() {
                                                         text-white/90
                                                         md:text-base
                                                     "
-                                                >
-                                                    {concern.description}
-                                                </p>
-                                            </motion.div>
-                                        )}
-                                    </AnimatePresence>
+                                                    >
+                                                        {concern.description}
+                                                    </p>
+                                                </motion.div>
+                                            )}
+                                        </AnimatePresence>
 
-                                    {/* ================================= */}
-                                    {/* ARROW */}
-                                    {/* ================================= */}
+                                        {/* ================================= */}
+                                        {/* ARROW */}
+                                        {/* ================================= */}
 
-                                    <motion.div
-                                        animate={{
-                                            x: isHovered ? 5 : 0,
-                                            y: isHovered ? -3 : 0,
-                                        }}
-                                        transition={{
-                                            duration: 0.35,
-                                        }}
-                                        className="
+                                        <motion.div
+                                            animate={{
+                                                x: isHovered ? 5 : 0,
+                                                y: isHovered ? -3 : 0,
+                                            }}
+                                            transition={{
+                                                duration: 0.35,
+                                            }}
+                                            className="
                                             mt-6
                                             flex
                                             h-10
@@ -318,28 +338,28 @@ export default function SkinConcerns() {
                                             justify-start
                                             text-white
                                         "
-                                    >
-                                        <ArrowUpRight
-                                            size={27}
-                                            strokeWidth={1.5}
-                                        />
-                                    </motion.div>
+                                        >
+                                            <ArrowUpRight
+                                                size={27}
+                                                strokeWidth={1.5}
+                                            />
+                                        </motion.div>
 
+                                    </div>
                                 </div>
-                            </div>
 
-                        </motion.div>
-                    );
-                })}
+                            </motion.div>
+                        );
+                    })}
 
-            </div>
+                </div>
 
-            {/* ========================================= */}
-            {/* SOFT PURPLE GLOW */}
-            {/* ========================================= */}
+                {/* ========================================= */}
+                {/* SOFT PURPLE GLOW */}
+                {/* ========================================= */}
 
-            <div
-                className="
+                <div
+                    className="
                     pointer-events-none
                     absolute
                     -bottom-32
@@ -352,8 +372,9 @@ export default function SkinConcerns() {
                     bg-[#D8B8F5]/20
                     blur-3xl
                 "
-            />
+                />
 
-        </section>
+            </section>
+        </>
     );
 }

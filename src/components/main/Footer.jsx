@@ -16,6 +16,7 @@ import {
 } from "react-icons/fa";
 
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 const socials = [
     {
@@ -297,15 +298,14 @@ export default function Footer() {
                             <nav className="mt-7 flex flex-col gap-5">
 
                                 {[
-                                    "Home",
-                                    "Our Story",
-                                    "Skin Concerns",
-                                    "Products",
-                                    "Contact",
-                                ].map((item) => (
+                                    { name: "Home", href: "/" },
+                                    { name: "About Us", href: "/about" },
+                                    { name: "Our Story", href: "/about#our-story" },
+                                    { name: "Our Philosophy", href: "/our-philosophy" },
+                                ].map((item, idx) => (
                                     <a
-                                        key={item}
-                                        href="#"
+                                        key={idx}
+                                        href={item.href}
                                         className="
                                             group
                                             flex
@@ -318,7 +318,7 @@ export default function Footer() {
                                             hover:text-white
                                         "
                                     >
-                                        {item}
+                                        {item.name}
 
                                         <ArrowUpRight
                                             size={16}
@@ -437,8 +437,8 @@ export default function Footer() {
 
                             <nav className="mt-7 flex flex-col gap-5">
 
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/our-philosophy"
                                     className="
                                         text-base
                                         text-white/80
@@ -446,11 +446,11 @@ export default function Footer() {
                                         hover:text-white
                                     "
                                 >
-                                    Privacy
-                                </a>
+                                    Our Philosophy
+                                </Link>
 
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/about"
                                     className="
                                         text-base
                                          text-white/80
@@ -458,33 +458,8 @@ export default function Footer() {
                                         hover:text-white
                                     "
                                 >
-                                    Terms
-                                </a>
-
-                                <a
-                                    href="#"
-                                    className="
-                                        text-base
-                                        text-white/80
-                                        transition-colors
-                                        hover:text-white
-                                    "
-                                >
-                                    Accessibility
-                                </a>
-
-                                <a
-                                    href="#"
-                                    className="
-                                        text-base
-                                        text-white/80
-                                        transition-colors
-                                        hover:text-white
-                                    "
-                                >
-                                    FAQ
-                                </a>
-
+                                    About Us
+                                </Link>
                             </nav>
                         </div>
 

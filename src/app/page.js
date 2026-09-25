@@ -6,13 +6,10 @@ import Hero from "@/components/home/Hero";
 import Problems from "@/components/home/Marquee";
 import SkinConcerns from "@/components/home/SkinConcerns";
 import SocialCTA from "@/components/home/SocialCTA";
-import Footer from "@/components/main/Footer";
-import Navbar from "@/components/main/Navbar";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <Hero />
       <Problems />
       <FormSection />
@@ -21,7 +18,6 @@ export default function Home() {
       <Certifications />
       <SocialCTA />
       <AirPodsGiveaway />
-      <Footer />
     </div>
   );
 }
