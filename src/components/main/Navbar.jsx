@@ -32,7 +32,7 @@ export default function Navbar() {
         flex
         h-20
         items-center
-        justify-between
+        justify-center
         border
         border-black/10
         bg-white/80
@@ -43,7 +43,7 @@ export default function Navbar() {
       ">
 
                 {/* LEFT */}
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.6, duration: 0.6 }}
@@ -104,7 +104,7 @@ export default function Navbar() {
                             className="transition-transform duration-300 group-hover:scale-110"
                         />
                     </Link>
-                </motion.div>
+                </motion.div> */}
 
                 {/* CENTER LOGO */}
                 <motion.div
@@ -146,7 +146,7 @@ export default function Navbar() {
                 </motion.div>
 
                 {/* RIGHT */}
-                <motion.div
+                {/* <motion.div
                     initial={{
                         opacity: 0,
                         x: 20,
@@ -194,7 +194,7 @@ export default function Navbar() {
               "
                         />
                     </Link>
-                </motion.div>
+                </motion.div> */}
 
             </nav>
         </motion.header>

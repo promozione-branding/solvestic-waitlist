@@ -24,11 +24,11 @@ function MarqueeSet({ duplicate = false }) {
           key={`${duplicate ? "second" : "first"}-${index}`}
           className="flex shrink-0 items-center gap-8 px-4 sm:gap-10 sm:px-6"
         >
-          <span className="whitespace-nowrap text-xs font-semibold uppercase tracking-[0.14em] text-purple-900 sm:text-sm">
+          <span className="whitespace-nowrap text-xs font-semibold uppercase tracking-[0.14em] text-purple-900 sm:text-lg">
             {problem}
           </span>
 
-          <span className="text-sm text-purple-300">•</span>
+          <span className="text-2xl text-purple-300">•</span>
         </div>
       ))}
     </div>
@@ -37,9 +37,9 @@ function MarqueeSet({ duplicate = false }) {
 
 export default function Problems() {
   return (
-    <div className="w-full overflow-hidden bg-white">
+    <div className="w-full overflow-hidden bg-white border-b border-[#b773c5]">
       <motion.div
-        className="flex h-[30px] w-max items-center"
+        className="flex h-[50px] w-max items-center"
         animate={{
           x: ["0%", "-50%"],
         }}
