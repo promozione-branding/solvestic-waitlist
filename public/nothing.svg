@@ -1,0 +1,63 @@
+<svg width="600" height="560" viewBox="0 0 600 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="560" rx="28" fill="#EEEFF8"/>
+
+  <!-- subtle decorative elements -->
+  <circle cx="82" cy="90" r="5" fill="#B6B8DB"/>
+  <circle cx="505" cy="92" r="4" fill="#8E91C4"/>
+  <circle cx="95" cy="465" r="4" fill="#8E91C4"/>
+  <circle cx="505" cy="455" r="6" fill="#B6B8DB"/>
+
+  <!-- central botanical / ingredient composition -->
+  <path d="M300 397C299 328 300 261 300 187" stroke="#26244F" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- leaves -->
+  <path d="M300 257C268 238 245 211 249 179C281 184 305 207 300 257Z" fill="#B6B8DB"/>
+  <path d="M300 310C334 293 358 265 354 233C322 238 296 262 300 310Z" fill="#8E91C4"/>
+  <path d="M300 205C275 189 259 166 263 141C287 146 305 165 300 205Z" fill="#9FA3D0"/>
+  <path d="M300 350C326 338 346 318 344 292C319 297 300 317 300 350Z" fill="#B6B8DB"/>
+
+  <!-- simple flower -->
+  <circle cx="300" cy="143" r="16" fill="#26244F"/>
+  <circle cx="300" cy="118" r="17" fill="#B6B8DB"/>
+  <circle cx="325" cy="143" r="17" fill="#B6B8DB"/>
+  <circle cx="300" cy="168" r="17" fill="#8E91C4"/>
+  <circle cx="275" cy="143" r="17" fill="#B6B8DB"/>
+  <circle cx="300" cy="143" r="8" fill="#EEEFF8"/>
+
+  <!-- ingredient droplets -->
+  <g fill="#26244F">
+    <path d="M192 174C192 174 179 190 179 201C179 208 185 214 192 214C199 214 205 208 205 201C205 190 192 174 192 174Z"/>
+    <path d="M416 190C416 190 403 206 403 217C403 224 409 230 416 230C423 230 429 224 429 217C429 206 416 190 416 190Z"/>
+  </g>
+
+  <!-- clean ingredient capsule -->
+  <rect x="169" y="309" width="86" height="40" rx="20" fill="#FFFFFF" stroke="#B6B8DB" stroke-width="2"/>
+  <circle cx="191" cy="329" r="9" fill="#8E91C4"/>
+  <path d="M212 329H238" stroke="#26244F" stroke-width="2.5" stroke-linecap="round"/>
+
+  <rect x="345" y="349" width="86" height="40" rx="20" fill="#FFFFFF" stroke="#B6B8DB" stroke-width="2"/>
+  <circle cx="367" cy="369" r="9" fill="#B6B8DB"/>
+  <path d="M388 369H414" stroke="#26244F" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- minimal product-free cream swatch -->
+  <path d="M164 424C194 393 242 394 273 416C293 430 322 432 346 416C376 397 421 398 443 425C425 452 389 467 347 463C319 460 289 459 259 464C217 471 181 455 164 424Z" fill="#FFFFFF"/>
+  <path d="M183 425C213 412 239 414 265 430C287 443 317 445 342 431C371 415 397 417 424 430" stroke="#B6B8DB" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- labels -->
+  <text x="300" y="495" text-anchor="middle"
+        fill="#4B4886"
+        font-family="DM Sans, Arial, sans-serif"
+        font-size="13"
+        font-weight="700"
+        letter-spacing="3">
+    NOTHING HIDDEN
+  </text>
+
+  <text x="300" y="518" text-anchor="middle"
+        fill="#26244F"
+        font-family="Fraunces, Georgia, serif"
+        font-size="18"
+        font-style="italic">
+    Nothing unnecessary.
+  </text>
+</svg>

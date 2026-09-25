@@ -1,0 +1,84 @@
+<svg width="600" height="560" viewBox="0 0 600 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="560" rx="28" fill="#EEEFF8"/>
+
+  <!-- soft decorative dots -->
+  <circle cx="82" cy="88" r="5" fill="#B6B8DB"/>
+  <circle cx="512" cy="96" r="4" fill="#8E91C4"/>
+  <circle cx="94" cy="454" r="4" fill="#8E91C4"/>
+  <circle cx="505" cy="450" r="6" fill="#B6B8DB"/>
+
+  <!-- sun -->
+  <circle cx="300" cy="145" r="58" fill="#B6B8DB"/>
+  <circle cx="300" cy="145" r="39" fill="#FFD978"/>
+
+  <!-- sun rays -->
+  <g stroke="#26244F" stroke-width="3" stroke-linecap="round" opacity=".8">
+    <path d="M300 68V48"/>
+    <path d="M300 242V222"/>
+    <path d="M223 145H203"/>
+    <path d="M397 145H377"/>
+    <path d="M246 91L232 77"/>
+    <path d="M368 213L354 199"/>
+    <path d="M354 91L368 77"/>
+    <path d="M232 213L246 199"/>
+  </g>
+
+  <!-- antioxidant shield -->
+  <g transform="translate(398 112)">
+    <circle cx="45" cy="45" r="43" fill="#26244F"/>
+    <path d="M45 19L68 28V46C68 61 59 72 45 79C31 72 22 61 22 46V28L45 19Z" fill="#EEEFF8"/>
+    <path d="M35 47L42 54L56 39" stroke="#8E91C4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- lightweight serum bottle -->
+  <g transform="translate(166 247)">
+    <rect x="38" y="0" width="82" height="24" rx="8" fill="#26244F"/>
+    <rect x="50" y="22" width="58" height="18" rx="5" fill="#8E91C4"/>
+    <rect x="18" y="39" width="122" height="165" rx="27" fill="#FFFFFF" stroke="#B6B8DB" stroke-width="4"/>
+    <rect x="37" y="75" width="84" height="74" rx="12" fill="#EEEFF8"/>
+    <text x="79" y="103" text-anchor="middle" fill="#26244F"
+          font-family="DM Sans, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2">
+      AM
+    </text>
+    <text x="79" y="122" text-anchor="middle" fill="#4B4886"
+          font-family="Fraunces, Georgia, serif" font-size="15">
+      protect
+    </text>
+    <circle cx="79" cy="177" r="9" fill="#FFD978"/>
+  </g>
+
+  <!-- floating antioxidant dots -->
+  <g fill="#FFD978">
+    <circle cx="155" cy="222" r="7"/>
+    <circle cx="438" cy="271" r="6"/>
+    <circle cx="459" cy="316" r="4"/>
+  </g>
+
+  <!-- hydration drops -->
+  <g fill="#8E91C4">
+    <path d="M410 348C410 348 398 363 398 373C398 380 403 385 410 385C417 385 422 380 422 373C422 363 410 348 410 348Z"/>
+    <path d="M460 380C460 380 450 393 450 401C450 407 454 411 460 411C466 411 470 407 470 401C470 393 460 380 460 380Z"/>
+  </g>
+
+  <!-- protective ground / glow -->
+  <path d="M137 426C178 400 222 401 262 419C290 432 316 435 344 419C385 396 431 401 463 427C432 457 386 469 344 462C310 457 282 457 250 463C205 471 160 458 137 426Z" fill="#B6B8DB"/>
+  <path d="M162 426C198 416 226 418 257 432C285 445 314 447 343 432C374 417 403 418 437 431"
+        stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity=".85"/>
+
+  <!-- caption -->
+  <text x="300" y="505" text-anchor="middle"
+        fill="#4B4886"
+        font-family="DM Sans, Arial, sans-serif"
+        font-size="13"
+        font-weight="700"
+        letter-spacing="3">
+    DAY
+  </text>
+  <text x="300" y="531" text-anchor="middle"
+        fill="#26244F"
+        font-family="Fraunces, Georgia, serif"
+        font-size="22"
+        font-style="italic">
+    protect
+  </text>
+</svg>
