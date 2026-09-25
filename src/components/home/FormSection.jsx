@@ -143,11 +143,11 @@ export default function FormSection() {
         <form
             id="form"
             onSubmit={handleSubmit}
-            className="w-full max-w-4xl px-5 py-8 mx-auto scroll-mt-10  "
+            className="w-full max-w-6xl px-5 py-8 mx-auto scroll-mt-10  "
         >
             {/* Form Heading */}
             <div className="mb-6">
-                <h3 className="text-xl sm:text-3xl font-semibold text-purple-950">
+                <h3 className="text-xl sm:text-5xl font-semibold text-purple-950">
                     Join Our Waitlist
                 </h3>
 
