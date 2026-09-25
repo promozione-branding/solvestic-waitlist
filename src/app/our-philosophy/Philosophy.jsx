@@ -471,7 +471,7 @@ export default function OurPhilosophy() {
 
       <main>
         {/* Hero */}
-        <section className="relative grid min-h-[600px] grid-cols-1 mt-20 items-center gap-10 overflow-hidden bg-[#F0EBF9] px-5 py-14 sm:px-10 lg:min-h-[620px] lg:grid-cols-2 lg:gap-16 lg:px-[80px] lg:py-[70px]">
+        <section className="relative grid min-h-[600px] grid-cols-1 mt-20 items-center gap-10 overflow-hidden bg-[#F0EBF9] px-5 py-14 sm:px-10 lg:min-h-[620px] lg:grid-cols-2 lg:gap-16 lg:px-[70px] lg:py-[60px]">
           <div className="relative z-10 flex flex-col gap-6 lg:gap-7">
             <div className="sv-fade text-[10px] font-bold uppercase tracking-[.22em] text-[#4B4886] sm:text-[13px]">
               Our Philosophy
