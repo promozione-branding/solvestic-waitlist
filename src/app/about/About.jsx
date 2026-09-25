@@ -10,11 +10,11 @@ export default function About() {
           HERO / INTRO
       ===================================================== */}
       <div className="px-3 pt-3 sm:px-5 sm:pt-5">
-        <div className="relative min-h-[520px] overflow-hidden rounded-[24px] bg-[#F3F1F4] sm:min-h-[530px] ">
+        <div className="relative min-h-[520px] overflow-hidden rounded-[24px] bg-[#7b44bf] sm:min-h-[530px] ">
 
           {/* Replace with your Solvestic image */}
           <img
-            src="/images/our-story-hero.jpg"
+            src="/aboutban2.webp"
             alt="Solvestic story"
             className="absolute inset-0 h-full w-full object-cover"
           />
@@ -29,12 +29,10 @@ export default function About() {
               
             </div>
 
-            <div className="hidden max-w-[180px] text-right text-xs leading-relaxed sm:block">
-              Understand first.
-              <br />
-              Act second.
-              <br />
-              Always.
+            <div className="hidden  text-right text-4xl  sm:block">
+              Build From 
+              Personal  <br /> Experience
+             
             </div>
           </div>
         </div>
@@ -43,7 +41,7 @@ export default function About() {
       {/* =====================================================
           STORY INTRO
       ===================================================== */}
-      <div className="px-5 py-7 sm:px-10 sm:py-13">
+      <div className="px-5 py-7 sm:px-10 sm:py-12">
         <div className="mx-auto max-w-[850px] text-center">
 
           <p className="mb-8 text-[10px] uppercase tracking-[0.2em] text-[#8E91C4]">
@@ -95,12 +93,12 @@ export default function About() {
           THE QUESTION
       ===================================================== */}
       <div className="px-3 sm:px-5">
-        <div className="grid overflow-hidden rounded-[24px] bg-[#F3F1F4] lg:grid-cols-2">
+        <div className="grid overflow-hidden rounded-[24px] bg-[#fff] lg:grid-cols-2">
 
           {/* Image */}
           <div className="min-h-[430px] bg-[#E7E4EA] lg:min-h-[620px]">
             <img
-              src="/images/our-story-question.jpg"
+              src="/ban2.jpeg"
               alt="The beginning of Solvestic"
               className="h-full w-full object-cover"
             />
@@ -144,16 +142,16 @@ export default function About() {
       {/* =====================================================
           SOLVESTIC PHILOSOPHY
       ===================================================== */}
-      <div className="px-5 py-20 sm:px-10 sm:py-28 lg:px-20 lg:py-36">
+      <div className="px-5 py-6 sm:px-10 sm:py-13">
 
         <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
 
           <div>
-            <p className="text-[10px] uppercase tracking-[0.2em] text-[#8E91C4]">
+            <p className="text-[10px] uppercase tracking-[0.2em] text-black">
               OUR PHILOSOPHY
             </p>
 
-            <h2 className="mt-5 max-w-[420px] font-serif text-5xl leading-[0.98] sm:text-6xl">
+            <h2 className="mt-5 max-w-[420px] text-black font-serif text-5xl leading-[0.98] sm:text-6xl">
               Understand first.
               <br />
               <i>Act second.</i>
@@ -162,7 +160,7 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="max-w-[680px] text-sm leading-[1.9] text-[#55537A] sm:text-base">
+          <div className="max-w-[680px] text-sm  text-black sm:text-base">
 
             <p>
               That became the thought behind Solvestic.
@@ -215,23 +213,23 @@ export default function About() {
                   THE PEOPLE BEHIND SOLVESTIC
                 </p>
 
-                <h2 className="mt-6 font-serif text-4xl leading-[1.05] sm:text-5xl">
+                <h2 className="mt-6 font-serif text-black text-4xl leading-[1.05] sm:text-5xl">
                   Two creative minds.
                   <br />
                   One shared belief.
                 </h2>
 
-                <p className="mt-8 text-sm leading-[1.9] text-[#55537A] sm:text-base">
+                <p className="mt-8 text-sm leading-[1.9] text-black sm:text-base">
                   We wanted to create skincare differently — with transparency
                   at the centre of every decision.
                 </p>
 
-                <p className="mt-6 text-sm leading-[1.9] text-[#55537A] sm:text-base">
+                <p className="mt-6 text-sm leading-[1.9] text-black sm:text-base">
                   We wanted to understand skin concerns properly before trying
                   to create solutions for them.
                 </p>
 
-                <p className="mt-6 text-sm leading-[1.9] text-[#55537A] sm:text-base">
+                <p className="mt-6 text-sm leading-[1.9] text-black sm:text-base">
                   No unnecessary promises, no trying to make skincare
                   complicated, and no building something simply because it
                   sounds good.
@@ -239,19 +237,19 @@ export default function About() {
 
                 <div className="mt-10 grid grid-cols-2 gap-8 border-t border-[#DCDDEF] pt-7">
                   <div>
-                    <p className="text-[10px] uppercase tracking-[0.15em] text-[#8E91C4]">
+                    <p className="text-[10px] uppercase tracking-[0.15em] text-black">
                       SNEHA SUMAN
                     </p>
-                    <p className="mt-2 text-sm text-[#26244F]">
+                    <p className="mt-2 text-sm text-black">
                       Fashion Designer
                     </p>
                   </div>
 
                   <div>
-                    <p className="text-[10px] uppercase tracking-[0.15em] text-[#8E91C4]">
+                    <p className="text-[10px] uppercase tracking-[0.15em] text-black">
                       PRINCE VERMA
                     </p>
-                    <p className="mt-2 text-sm text-[#26244F]">
+                    <p className="mt-2 text-sm text-black">
                       Model
                     </p>
                   </div>
@@ -267,19 +265,19 @@ export default function About() {
       {/* =====================================================
           MISSION
       ===================================================== */}
-      <div className="px-5 py-24 text-center sm:px-10 sm:py-32 lg:py-40">
+      <div className="px-5 py-6 text-center sm:px-10 sm:py-13">
 
         <p className="text-[10px] uppercase tracking-[0.2em] text-[#8E91C4]">
           OUR MISSION
         </p>
 
-        <h2 className="mx-auto mt-6 max-w-[850px] font-serif text-4xl leading-[1.05] sm:text-5xl lg:text-7xl">
+        <h2 className="mx-auto mt-6 max-w-[850px] font-serif text-[#7b44bf] text-4xl leading-[1.05] sm:text-5xl lg:text-7xl">
           Skincare that feels less like a brand selling to you,
           <br className="hidden lg:block" />
           <i>and more like someone understands.</i>
         </h2>
 
-        <div className="mx-auto mt-10 max-w-[680px] text-sm leading-[1.9] text-[#55537A] sm:text-base">
+        <div className="mx-auto mt-10 max-w-[680px] text-sm leading-[1.9] text-black sm:text-base">
           <p>
             Our mission is simple, and it’s one we return to every day:
             keep listening, keep understanding, and keep building things that
@@ -294,7 +292,7 @@ export default function About() {
       ===================================================== */}
       <div className="px-3 pb-3 sm:px-5 sm:pb-5">
 
-        <div className="relative min-h-[550px] overflow-hidden rounded-[24px] bg-[#26244F] sm:min-h-[680px]">
+        <div className="relative min-h-[550px] overflow-hidden rounded-[24px] bg-[#7b44bf] sm:min-h-[580px]">
 
           <img
             src="/images/our-story-closing.jpg"
