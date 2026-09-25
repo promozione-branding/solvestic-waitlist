@@ -7,7 +7,7 @@ export default function Founding100Section() {
     return (
         <section className="relative overflow-hidden bg-[#b773c5] py-10 sm:py-12">
             <div className="mxuto mx-w-6xl px-4 sm:px-10">
-                <div className="absolute -top-4 right-0 z-50">
+                <div className="absolute -top-4 right-0 z-40">
                     <img src="/brush.png" alt="paint" className="h-35" />
                 </div>
 

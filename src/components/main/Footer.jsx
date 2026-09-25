@@ -121,7 +121,7 @@ export default function Footer() {
                     "
                 >
                     <img
-                        src="/newlogo1.png"
+                        src="/ChatGPT Image Sep 25, 2026, 06_04_10 PM.png"
                         alt="Solvestic"
                         className="
                             h-auto
@@ -312,7 +312,7 @@ export default function Footer() {
                                             items-center
                                             gap-2
                                             text-base
-                                            text-[#2D1557]/80
+                                            text-white/80
                                             transition-colors
                                             duration-300
                                             hover:text-white
@@ -383,7 +383,7 @@ export default function Footer() {
                                                 items-center
                                                 gap-3
                                                 text-base
-                                                text-[#2D1557]/80
+                                                text-white/80
                                                 transition-colors
                                                 duration-300
                                                 hover:text-white
@@ -441,7 +441,7 @@ export default function Footer() {
                                     href="#"
                                     className="
                                         text-base
-                                        text-[#2D1557]/80
+                                        text-white/80
                                         transition-colors
                                         hover:text-white
                                     "
@@ -453,7 +453,7 @@ export default function Footer() {
                                     href="#"
                                     className="
                                         text-base
-                                        text-[#2D1557]/80
+                                         text-white/80
                                         transition-colors
                                         hover:text-white
                                     "
@@ -465,7 +465,7 @@ export default function Footer() {
                                     href="#"
                                     className="
                                         text-base
-                                        text-[#2D1557]/80
+                                        text-white/80
                                         transition-colors
                                         hover:text-white
                                     "
@@ -477,7 +477,7 @@ export default function Footer() {
                                     href="#"
                                     className="
                                         text-base
-                                        text-[#2D1557]/80
+                                        text-white/80
                                         transition-colors
                                         hover:text-white
                                     "
