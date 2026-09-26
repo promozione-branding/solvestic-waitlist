@@ -192,7 +192,7 @@ export default function About() {
           FOUNDER STORY
       ===================================================== */}
       <div className="px-3 sm:px-5">
-        <div className="overflow-hidden rounded-[24px] bg-[#F3F1F4]">
+        <div className="overflow-hidden rounded-[24px] bg-[#fff]">
 
           <div className="grid lg:grid-cols-2">
 

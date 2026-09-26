@@ -730,11 +730,15 @@ export default function OurPhilosophy() {
             </a>
           </div>
 
+                <div className="h-full w-full flex justify-center items-center">
           <img
-            className="sv-float-slow mx-auto h-[320px] w-full max-w-[600px] rounded-[24px_140px_24px_24px] object-cover sm:h-[400px] lg:h-[480px] lg:rounded-[24px_240px_24px_24px]"
-            src={"/nothing.svg"}
+            className="sv-float-slow mx-auto h-100 w-full object-contain"
+            src="/key.png"
+            height={100}
+            width={100}
             alt="Cream swatch, serum drop and botanicals on lavender"
           />
+          </div>
         </section>
 
         {/* Benefits ticker */}
