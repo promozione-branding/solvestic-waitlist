@@ -194,10 +194,10 @@ export default function About() {
       <div className="px-3 sm:px-5">
         <div className="overflow-hidden rounded-[24px] bg-[#fff]">
 
-          <div className="grid lg:grid-cols-2">
+          <div className="grid md:grid-cols-2  ">
 
             {/* Founder image */}
-            <div className="min-h-[480px] bg-[#E5E2E7] lg:min-h-[680px]">
+            <div className="min-h-[480px] order-2 bg-[#E5E2E7] lg:min-h-[600px]">
               <img
                 src="/about4.jpeg"
                 alt="Sneha Suman and Prince Verma"
@@ -206,7 +206,7 @@ export default function About() {
             </div>
 
             {/* Founder copy */}
-            <div className="flex items-center px-7 py-16 sm:px-12 lg:px-20">
+            <div className="flex order-1  items-center px-7 py-16 sm:px-12 lg:px-20">
               <div className="max-w-[550px]">
 
                 <p className="text-[10px] uppercase tracking-[0.2em] text-[#8E91C4]">
@@ -235,7 +235,7 @@ export default function About() {
                   sounds good.
                 </p>
 
-                <div className="mt-10 grid grid-cols-2 gap-8 border-t border-[#DCDDEF] pt-7">
+                {/* <div className="mt-10 grid grid-cols-2 gap-8 border-t border-[#DCDDEF] pt-7">
                   <div>
                     <p className="text-[10px] uppercase tracking-[0.15em] text-black">
                       SNEHA SUMAN
@@ -253,7 +253,7 @@ export default function About() {
                       Model
                     </p>
                   </div>
-                </div>
+                </div> */}
 
               </div>
             </div>
