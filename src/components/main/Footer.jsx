@@ -62,8 +62,8 @@ export default function Footer() {
 
     const logoY = useTransform(
         scrollYProgress,
-        [0.72, 0.92],
-        [60, 0]
+        [0.22, 0.99],
+        [70, 0]
     );
 
     const logoOpacity = useTransform(
@@ -79,7 +79,7 @@ export default function Footer() {
             {/* LOGO ZOOM SECTION */}
             {/* ================================================= */}
 
-            <section className="relative flex h-[30vh] min-h-[400px] items-center justify-center overflow-hidden">
+            <section className="relative flex h-[15vh] md:h-[30vh] md:min-h-[400px] items-center justify-center overflow-hidden">
 
                 {/* SOFT BACKGROUND GLOW */}
                 {/* <div
@@ -164,7 +164,7 @@ export default function Footer() {
                             className="
                                 border-b
                                 border-black/20
-                                p-8
+                                p-4
                                 md:p-10
                                 lg:border-b-0
                                 lg:border-r
@@ -176,7 +176,7 @@ export default function Footer() {
                             <p
                                 className="
                                     max-w-lg
-                                    text-lg
+                                    text-base
                                     leading-8
                                     text-white
                                     md:text-xl
@@ -190,7 +190,7 @@ export default function Footer() {
                                     mt-5
                                     max-w-xl
                                     text-sm
-                                    leading-7
+                                    md:leading-7
                                     text-white
                                     md:text-base
                                 "
@@ -275,7 +275,7 @@ export default function Footer() {
                             className="
                                 border-b
                                 border-black/20
-                                p-8
+                                p-4
                                 md:p-10
                                 lg:border-b-0
                                 lg:border-r
@@ -295,7 +295,7 @@ export default function Footer() {
                                 Navigate
                             </h3>
 
-                            <nav className="mt-7 flex flex-col gap-5">
+                            <nav className="mt-3 md:mt-7 flex flex-col gap-3 md:gap-5">
 
                                 {[
                                     { name: "Home", href: "/" },
@@ -346,7 +346,7 @@ export default function Footer() {
                             className="
                                 border-b
                                 border-black/20
-                                p-8
+                                p-4
                                 md:p-10
                                 lg:border-b-0
                                 lg:border-r
@@ -366,7 +366,7 @@ export default function Footer() {
                                 Social
                             </h3>
 
-                            <div className="mt-7 flex flex-col gap-5">
+                            <div className="mt-3 md:mt-7 flex flex-col gap-3 md:gap-5">
 
                                 {socials.map((social) => {
                                     const Icon = social.icon;
@@ -414,7 +414,7 @@ export default function Footer() {
                         {/* ===================================== */}
                         {/* OFFICIAL / SUPPORT */}
                         {/* ===================================== */}
-                        <div className="p-8 md:p-10 lg:p-12">
+                        <div className="p-4 md:p-10 lg:p-12">
 
                             <div className="space-y-7">
 
@@ -437,11 +437,11 @@ export default function Footer() {
                                             <p className="text-xs font-medium uppercase tracking-[0.12em] text-white/90">
                                                 Office Address
                                             </p>
-                                            <p className="mt-1 text-base font-semibold leading-relaxed text-white">
+                                            <p className="mt-1 text-base font-semibold md:leading-relaxed text-white">
                                                 Solvestic Wellness Private Limited
                                             </p>
 
-                                            <p className="mt-2 max-w-md text-sm leading-7 text-white">
+                                            <p className="mt-2 max-w-md text-sm md:leading-7 text-white">
                                                 Office No. 1001, Pearls Best Heights-2,
                                                 <br />
                                                 Plot-C9, NSP, Pitampura,
@@ -468,7 +468,7 @@ export default function Footer() {
                                                 Support
                                             </p>
 
-                                            <p className="mt-1 text-sm leading-7 text-white">
+                                            <p className="mt-1 text-sm md:not-last-of-type:leading-7 text-white">
                                                 We’re here Monday – Saturday
                                                 <br />
                                                 <span className="text-white/75">

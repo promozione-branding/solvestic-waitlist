@@ -75,7 +75,8 @@ export default function SkinConcerns() {
             <section
                 className="
                 relative
-                h-[90vh]
+                h-[30vh]
+                md:h-[90vh]
                 min-h-[500px]
                 w-full
                 overflow-hidden
@@ -217,7 +218,7 @@ export default function SkinConcerns() {
                                     h-full
                                     flex-col
                                     justify-between
-                                    p-6
+                                    p-2
                                     md:p-8
                                     lg:p-10
                                 "
@@ -304,9 +305,9 @@ export default function SkinConcerns() {
                                                         className="
                                                         mt-5
                                                         max-w-[340px]
-                                                        text-sm
+                                                        text-[13px]
                                                         font-medium
-                                                        leading-7
+                                                        md:leading-7
                                                         text-white/90
                                                         md:text-base
                                                     "

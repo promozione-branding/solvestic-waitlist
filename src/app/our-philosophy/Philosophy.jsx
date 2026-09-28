@@ -478,11 +478,11 @@ export default function OurPhilosophy() {
               Our Philosophy
             </div>
 
-            <h1 className="sv-fade sv-d1 max-w-[720px] text-[#ac4cd1]    font-light leading-[1.02] tracking-[-.02em] text-[44px] sm:text-[54px] lg:text-[clamp(44px,5.3vw,76px)]">
+            <h1 className="sv-fade sv-d1 max-w-[720px] text-[#ac4cd1]    font-light leading-[1.02] tracking-[-.02em] text-4xl sm:text-[54px] lg:text-[clamp(44px,5.3vw,76px)]">
               Honest science. <em className="font-medium">Visible results.</em>
             </h1>
 
-            <p className="sv-fade sv-d2 max-w-[520px] text-[15px] leading-[1.65] sm:text-[17px] lg:text-[19px] lg:leading-[1.6]">
+            <p className="sv-fade sv-d2 max-w-[520px] text-base md:leading-[1.65] sm:text-[17px] lg:text-[19px] lg:leading-[1.6]">
               Every Solvestic formula starts with one question: what does your
               skin actually need? We pair proven actives with gentle,
               skin-friendly bases — and nothing you don’t need.
@@ -505,7 +505,7 @@ export default function OurPhilosophy() {
     <div
       className="
         relative
-        h-[420px]
+        h-[400px]
         overflow-hidden
         rounded-[210px_210px_24px_24px]
         bg-[#2d1557]
@@ -552,7 +552,7 @@ export default function OurPhilosophy() {
           sm:py-[18px]
         "
       >
-        <span className="sv-serif text-[15px] sm:text-[20px]">
+        <span className="sv-serif text-[12px] sm:text-[20px]">
           Clear science. Clear skin.
         </span>
 
@@ -573,12 +573,12 @@ export default function OurPhilosophy() {
         </section>
 
         {/* Stats */}
-        <section className="flex flex-col items-center gap-10 px-5 py-20 sm:px-13 ">
+        <section className="flex flex-col items-center gap-5 md:gap-10 px-5 py-6 md:py-13 sm:px-13 ">
           <h2 className="sv-h2 max-w-[760px] text-black text-center text-[32px] font-light leading-[1.15] sm:text-[40px] lg:text-[48px]">
             Results you can <em>see and measure.</em>
           </h2>
 
-          <div className="grid w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+          <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
             {STATS.map((s, i) => (
               <div
                 key={i}
@@ -587,7 +587,7 @@ export default function OurPhilosophy() {
                 <div className="sv-serif text-[#7B44BF] text-[48px] font-light leading-none sm:text-[58px] lg:text-[64px]">
                   {s.value}
                 </div>
-                <div className="text-[13px] leading-[1.5] sm:text-[15px]">
+                <div className="text-[12px] leading-[1.5] sm:text-[15px]">
                   {s.label}
                 </div>
               </div>
@@ -599,8 +599,8 @@ export default function OurPhilosophy() {
 
         {/* Principles */}
         <section className="bg-[#b1a2cf] px-5 py-6 text-white sm:px-10 sm:py-13">
-          <div className="mb-10 flex flex-col gap-5 lg:mb-14 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
-            <h2 className="sv-h2 max-w-[640px] text-[34px] font-light leading-[1.1] sm:text-[42px] lg:text-[52px]">
+          <div className="mb-5 md:mb-10 flex flex-col gap-5 lg:mb-14 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
+            <h2 className="sv-h2 max-w-[640px] text-[30px] font-light leading-[1.1] sm:text-[42px] lg:text-[52px]">
               Three principles{" "}
               <em className="text-[#fff]">behind every formula</em>
             </h2>
@@ -611,11 +611,11 @@ export default function OurPhilosophy() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-3 md:gap-5 md:grid-cols-3">
             {PRINCIPLES.map((p) => (
               <article
                 key={p.title}
-                className="group flex flex-col gap-5 rounded-[20px] bg-[#fff] p-6 transition duration-300 hover:-translate-y-2 hover:shadow-[0_22px_48px_rgba(0,0,0,.18)] sm:p-8 lg:p-9"
+                className="group flex flex-col gap-2 md:gap-5 rounded-[20px] bg-[#fff] p-6 transition duration-300 hover:-translate-y-2 hover:shadow-[0_22px_48px_rgba(0,0,0,.18)] sm:p-8 lg:p-9"
               >
                 <div className="sv-pulse flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#b1a2cf] sm:h-14 sm:w-14">
                   <svg
@@ -644,30 +644,30 @@ export default function OurPhilosophy() {
         </section>
 
         {/* How skin works */}
-        <section className="grid grid-cols-1 items-center gap-12 px-5 py-6 sm:px-10 md:grid-cols-2 sm:gap-15">
+        <section className="grid grid-cols-1 items-center gap-5 px-5 py-6 sm:px-10 md:grid-cols-2 sm:gap-15">
           <img
-            className="sv-float mx-auto h-[360px] w-full max-w-[600px] rounded-3xl object-cover sm:h-[460px] lg:h-[560px]"
+            className="sv-float mx-auto h-[320px] w-full max-w-[600px] rounded-3xl object-cover sm:h-[460px] lg:h-[560px]"
             src={"/svg2.svg"}
             alt="Illustration of skin layers with a serum drop reaching the barrier"
           />
 
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-3 md:gap-6">
             <div className="text-[10px] font-bold uppercase tracking-[.22em] text-[#7d45c2] sm:text-[13px]">
               How skin works
             </div>
 
-            <h2 className="sv-h2 text-[#7d45c2] text-[34px] font-light leading-[1.1] sm:text-[42px] lg:text-[52px]">
+            <h2 className="sv-h2 text-[#7d45c2] text-[30px] font-light leading-[1.1] sm:text-[42px] lg:text-[52px]">
               Healthy skin starts with{" "}
               <em>a healthy barrier.</em>
             </h2>
 
-            <p className="text-[15px] leading-[1.7] sm:text-[17px]">
+            <p className="text-base md:leading-[1.7] sm:text-[17px]">
               The outer layer of skin works like a brick wall — cells held
               together by a mortar of lipids. It locks moisture in and keeps
               irritants out.
             </p>
 
-            <p className="text-[15px] leading-[1.7] sm:text-[17px]">
+            <p className="text-base md:leading-[1.7] sm:text-[17px]">
               When that wall is damaged by sun, pollution or harsh products,
               skin loses water and shows it as dryness, dullness, redness and
               breakouts.
@@ -690,7 +690,7 @@ export default function OurPhilosophy() {
             Our formula for skincare
           </div>
 
-          <div className="sv-equation-line flex text-[#fff] flex-wrap items-center justify-center gap-4 text-[34px] font-light sm:gap-7 sm:text-[44px] lg:text-[54px]">
+          <div className="sv-equation-line flex text-[#fff] flex-wrap items-center justify-center gap-2 text-[30px] font-light sm:gap-7 sm:text-[44px] lg:text-[54px]">
             <span>Science</span>
             <span className="text-[.74em]">+</span>
             <span>Nature</span>
@@ -698,7 +698,7 @@ export default function OurPhilosophy() {
             <em>Solvestic</em>
           </div>
 
-          <p className="max-w-[820px] text-[#fff] text-[15px] leading-[1.7] sm:text-[18px]">
+          <p className="max-w-[820px] text-[#fff] text-sm md:leading-[1.7] sm:text-[18px]">
             Lab-proven actives meet skin-loving botanicals. Every formula is
             developed with dermatologists and tested for safety and results
             before it reaches you.
@@ -712,11 +712,11 @@ export default function OurPhilosophy() {
               Why it matters
             </div>
 
-            <h2 className="sv-h2 text-[34px] text-[#7d45c2]  font-light leading-[1.1] sm:text-[42px] lg:text-[52px]">
+            <h2 className="sv-h2 text-[30px] text-[#7d45c2]  font-light leading-[1.1] sm:text-[42px] lg:text-[52px]">
               Nothing hidden. <em>Nothing unnecessary.</em>
             </h2>
 
-            <p className="text-[15px] leading-[1.7] sm:text-[17px]">
+            <p className="text-sm md:leading-[1.7] sm:text-[17px]">
               We list every ingredient and why it’s there. Our products are
               tested on real skin, free from [parabens, sulphates — add your
               free-from list], and never tested on animals.
@@ -759,18 +759,18 @@ export default function OurPhilosophy() {
 
         {/* Experts */}
         <section className="px-5 py-6 sm:px-10 sm:py-13">
-          <div className="mb-10 flex flex-col gap-5 lg:mb-14 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
+          <div className="mb-5 md:mb-10 flex flex-col gap-5 lg:mb-14 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
             <div className="flex flex-col gap-6">
               <div className="text-[10px] font-bold uppercase tracking-[.22em] text-[#7d45c2] sm:text-[13px]">
                 Experts' corner
               </div>
 
-              <h2 className="sv-h2 text-[#7d45c2] text-[34px] font-light leading-[1.1] sm:text-[42px] lg:text-[52px]">
+              <h2 className="sv-h2 text-[#7d45c2] text-[30px] font-light leading-[1.1] sm:text-[42px] lg:text-[52px]">
                 The Solvestic <em>Advisory Board</em>
               </h2>
             </div>
 
-            <p className="max-w-[460px] text-[14px] leading-[1.6] sm:text-[17px]">
+            <p className="max-w-[460px] text-sm md:leading-[1.6] sm:text-[17px]">
               The dermatologists, cosmetic chemists and formulators who guide
               every Solvestic product.
             </p>
