@@ -706,6 +706,8 @@ export default function Hero() {
                             flex
                             h-9
                             w-9
+                            mt-3
+                            md:mt-0
                             items-center
                             justify-center
                             rounded-full
@@ -767,6 +769,8 @@ export default function Hero() {
                             flex
                             h-9
                             w-9
+                            mt-3
+                            md:mt-0
                             items-center
                             justify-center
                             rounded-full
