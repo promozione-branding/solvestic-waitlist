@@ -171,7 +171,7 @@ export default function Hero() {
 
                 <SwiperSlide>
                     {({ isActive }) => (
-                        <div className="relative flex r items-center h-screen w-full md:items-end overflow-hidden">
+                        <div className="relative flex  items-center h-screen w-full md:items-end overflow-hidden">
                             {/* BACKGROUND VIDEO */}
                             <video
                                 autoPlay
@@ -232,7 +232,7 @@ export default function Hero() {
     "
 >
     {/* FIRST LINE */}
-    <span className="block overflow-hidden">
+    <span className="block text-center overflow-hidden">
         {isActive &&
             "Where Beauty Knows No Boundary"
                 .split("")
