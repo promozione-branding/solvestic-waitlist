@@ -122,7 +122,7 @@ export default function Footer() {
                     "
                 >
                     <img
-                        src="/solvo.png"
+                        src="/solve.png"
                         alt="Solvestic"
                         className="
                             h-auto
