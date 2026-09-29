@@ -223,7 +223,7 @@ export default function Footer() {
                                         px-5
                                         py-4
                                         text-sm
-                                        text-white
+                                        text-black
                                         outline-none
                                         placeholder:text-[#563477]/50
                                         md:text-base

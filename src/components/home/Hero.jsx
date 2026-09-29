@@ -87,7 +87,7 @@ export default function Hero() {
     const { days, hours, minutes, seconds } = useCountdown(TARGET_DATE);
 
     return (
-        <section className="relative h-[80vh] md:h-screen w-full overflow-hidden">
+   <section className="relative mt-[120px] h-[calc(80vh-120px)] w-full overflow-hidden md:h-[calc(100vh-120px)]">
             <Swiper
                 modules={[Autoplay, EffectFade, Navigation]}
                 effect="fade"
@@ -103,10 +103,9 @@ export default function Hero() {
                     SLIDE 1 — VIDEO + TIMER + CTA (ALL CENTERED)
                 ===================================================== */}
 
-                <SwiperSlide>
-                    {({ isActive }) => (
-                        <div className="relative flex items-center justify-center h-screen w-full overflow-hidden">
-                            {/* BACKGROUND VIDEO */}
+<SwiperSlide className="!h-full">
+    {({ isActive }) => (
+        <div className="relative flex h-full w-full items-center justify-center overflow-hidden">                            {/* BACKGROUND VIDEO */}
                             <video
                                 autoPlay
                                 muted
@@ -125,21 +124,21 @@ export default function Hero() {
                             <div className="absolute inset-0 bg-black/40" />
 
                             {/* CONTENT — centered column */}
-                            <div
-                                className="
-                                    relative
-                                    z-10
-                                    flex
-                                    flex-col
-                                    items-center
-                                    text-center
-                                    px-4
-                                    sm:px-6
-                                    md:px-10
-                                    w-full
-                                    m-8
-                                "
-                            >
+                           <div
+    className="
+        relative
+        z-10
+        flex
+        w-full
+        flex-col
+        items-center
+        justify-center
+        px-4
+        text-center
+        sm:px-6
+        md:px-10
+    "
+>
                                 {/* HEADING */}
                                 <h1
                                     className="
