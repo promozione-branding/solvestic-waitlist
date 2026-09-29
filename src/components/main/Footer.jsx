@@ -6,7 +6,7 @@ import {
     useScroll,
     useTransform,
 } from "framer-motion";
-import { Building2, Clock3, MapPin } from "lucide-react";
+import { Building2, Clock3, MapPin, Phone, Mail } from "lucide-react";
 import {
     FaInstagram,
     FaFacebookF,
@@ -126,7 +126,7 @@ export default function Footer() {
                         alt="Solvestic"
                         className="
                             h-auto
-                            w-full
+                            w-[70%]
                             object-contain
                         "
                     />
@@ -182,7 +182,7 @@ export default function Footer() {
                                     md:text-xl
                                 "
                             >
-                                Join us on the road to an effortless glow.
+                               For the skin- smart generation.
                             </p>
 
                             <p
@@ -442,7 +442,7 @@ export default function Footer() {
                                             </p>
 
                                             <p className="mt-2 max-w-md text-sm md:leading-7 text-white">
-                                                Office No. 1001, Pearls Best Heights-2,
+                                                Office No. 1001, Pearl Best Heights-2,
                                                 <br />
                                                 Plot-C9, NSP, Pitampura,
                                                 <br />
@@ -451,34 +451,64 @@ export default function Footer() {
                                         </div>
                                     </div>
 
-                                    {/* Support */}
-                                    <div className="flex items-start gap-4">
-                                        <div
-                                            className="
-                flex h-11 w-11 shrink-0 items-center justify-center
-                rounded-full bg-white/10 text-white
-                ring-1 ring-white/10
+                      {/* Support */}
+<div className="flex items-start gap-4">
+    <div
+        className="
+            flex h-11 w-11 shrink-0 items-center justify-center
+            rounded-full bg-white/10 text-white
+            ring-1 ring-white/10
+        "
+    >
+        <Clock3 size={20} strokeWidth={1.8} />
+    </div>
+
+    <div>
+        <p className="text-xs font-medium uppercase tracking-[0.12em] text-white/90">
+            Support
+        </p>
+
+        <p className="mt-1 text-sm leading-7 text-white">
+            We're here Monday – Saturday
+            <br />
+            <span className="text-white/75">
+                11:00 AM – 6:15 PM
+            </span>
+        </p>
+
+        <p className="mt-1 text-sm leading-7 text-white">
+            Drop us a note anytime.
+        </p>
+
+        {/* ── PHONE ── */}
+        <a
+            href="tel:+911234567890"
+            className="
+                mt-3 flex items-center gap-2
+                text-sm text-white/90
+                transition-colors duration-300
+                hover:text-white
             "
-                                        >
-                                            <Clock3 size={20} strokeWidth={1.8} />
-                                        </div>
+        >
+            <Phone size={14} strokeWidth={1.8} className="shrink-0" />
+            +91 9220788799
+        </a>
 
-                                        <div>
-                                            <p className="text-xs font-medium uppercase tracking-[0.12em] text-white/90">
-                                                Support
-                                            </p>
-
-                                            <p className="mt-1 text-sm md:not-last-of-type:leading-7 text-white">
-                                                We’re here Monday – Saturday
-                                                <br />
-                                                <span className="text-white/75">
-                                                    9:00 AM – 6:00 PM
-                                                </span>
-                                            </p>
-
-                                            <p className="mt-1">Drop us a note anytime.</p>
-                                        </div>
-                                    </div>
+        {/* ── EMAIL ── */}
+        <a
+            href="mailto:care@solvestic.com"
+            className="
+                mt-2 flex items-center gap-2
+                text-sm text-white/90
+                transition-colors duration-300
+                hover:text-white
+            "
+        >
+            <Mail size={14} strokeWidth={1.8} className="shrink-0" />
+            care@solvestic.com
+        </a>
+    </div>
+</div>
                                 </div>
                             </div>
                         </div>

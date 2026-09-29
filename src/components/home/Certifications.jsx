@@ -29,6 +29,12 @@ const certifications = [
         description: "Safety Standards",
         image: "/icons/10.png",
     },
+        {
+        title: "DERMATOLOGICALLY TESTED",
+        subtitle: "FREE",
+        description: "Clean Formulation",
+        image: "/icons/13.png",
+    },
     {
         title: "CRUELTY FREE",
         subtitle: "FREE",
@@ -41,12 +47,7 @@ const certifications = [
         description: "Clean Formulation",
         image: "/icons/12.png",
     },
-    {
-        title: "DERMATOLOGICALLY TESTED",
-        subtitle: "FREE",
-        description: "Clean Formulation",
-        image: "/icons/13.png",
-    },
+
 ];
 
 export default function Certifications() {
@@ -237,7 +238,7 @@ export default function Certifications() {
                                         hover:-translate-y-2
                                         hover:shadow-[0_30px_80px_rgba(60,20,100,0.14)]
                                         h-full
-                                        w-60
+                                        w-full
                                         md:p-4
                                     "
                                 >
@@ -325,7 +326,7 @@ export default function Certifications() {
                                             className="
                                                 max-w-[300px]
                                                 font-heading
-                                                text-2xl
+                                                text-xl
                                                 uppercase
                                                 leading-[0.95]
                                                 tracking-tight
