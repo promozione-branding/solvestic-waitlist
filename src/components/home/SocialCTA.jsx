@@ -255,7 +255,7 @@ export default function SocialCTA() {
                     className="mt-9 flex justify-center"
                 >
                     <motion.a
-                        href="#form"
+                        href="#waitlist"
                         whileHover={{
                             scale: 1.05,
                         }}
