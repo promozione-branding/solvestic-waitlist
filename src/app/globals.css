@@ -60,3 +60,11 @@ video {
   background: #171717;
   color: #ffffff;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#waitlist {
+  scroll-margin-top: 100px;
+}

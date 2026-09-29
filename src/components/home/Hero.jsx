@@ -262,7 +262,7 @@ export default function Hero() {
                                     }}
                                     className="mt-6 sm:mt-7"
                                 >
-                                    <Link
+                                    <a
                                         href="#waitlist"
                                         className="
                                             group
@@ -297,7 +297,7 @@ export default function Hero() {
                                                 group-hover:-translate-y-1
                                             "
                                         />
-                                    </Link>
+                                    </a>
                                 </motion.div>
                             </div>
                         </div>

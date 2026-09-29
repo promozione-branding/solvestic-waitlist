@@ -19,17 +19,21 @@ const InputField = ({
   type,
   name,
   required = false,
+  maxLength,
 }) => (
   <div className="group flex items-center gap-3 bg-white border border-purple-100 rounded-xl px-4 py-3.5 w-full transition-all duration-200 hover:border-purple-200 focus-within:border-purple-400 focus-within:ring-4 focus-within:ring-purple-100">
     <Icon
       className="text-[#7D45C2] shrink-0 group-focus-within:text-purple-600 transition-colors"
       size={16}
     />
+
     <input
       type={type}
       name={name}
       placeholder={placeholder}
       required={required}
+      maxLength={maxLength}
+      inputMode={type === "tel" ? "numeric" : undefined}
       className="w-full outline-none text-sm text-gray-800 placeholder:text-gray-400 bg-transparent"
     />
   </div>
@@ -205,7 +209,7 @@ export default function FormSection() {
 
   return (
     <form
-      id="form"
+      id="waitlist"
       onSubmit={handleSubmit}
       className="w-full max-w-6xl px-5 py-8 mx-auto scroll-mt-10"
     >
@@ -240,6 +244,7 @@ export default function FormSection() {
         <InputField
           icon={FaPhoneAlt}
           placeholder="Phone Number"
+          maxLength={10}
           type="tel"
           name="phone"
           required
