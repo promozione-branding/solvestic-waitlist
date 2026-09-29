@@ -137,6 +137,7 @@ export default function Hero() {
                                     sm:px-6
                                     md:px-10
                                     w-full
+                                    m-8
                                 "
                             >
                                 {/* HEADING */}
