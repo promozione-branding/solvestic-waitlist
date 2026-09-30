@@ -182,7 +182,7 @@ export default function Footer() {
                                     md:text-xl
                                 "
                             >
-                               For the skin- smart generation.
+                                For the skin- smart generation.
                             </p>
 
                             <p
@@ -301,7 +301,7 @@ export default function Footer() {
                                     { name: "Home", href: "/" },
                                     { name: "About Us", href: "/about" },
                                     { name: "Our Story", href: "/about#our-story" },
-                                    { name: "Our Philosophy", href: "/our-philosophy" },
+                                    // { name: "Our Philosophy", href: "/our-philosophy" },
                                 ].map((item, idx) => (
                                     <a
                                         key={idx}
@@ -451,64 +451,64 @@ export default function Footer() {
                                         </div>
                                     </div>
 
-                      {/* Support */}
-<div className="flex items-start gap-4">
-    <div
-        className="
+                                    {/* Support */}
+                                    <div className="flex items-start gap-4">
+                                        <div
+                                            className="
             flex h-11 w-11 shrink-0 items-center justify-center
             rounded-full bg-white/10 text-white
             ring-1 ring-white/10
         "
-    >
-        <Clock3 size={20} strokeWidth={1.8} />
-    </div>
+                                        >
+                                            <Clock3 size={20} strokeWidth={1.8} />
+                                        </div>
 
-    <div>
-        <p className="text-xs font-medium uppercase tracking-[0.12em] text-white/90">
-            Support
-        </p>
+                                        <div>
+                                            <p className="text-xs font-medium uppercase tracking-[0.12em] text-white/90">
+                                                Support
+                                            </p>
 
-        <p className="mt-1 text-sm leading-7 text-white">
-            We're here Monday – Saturday
-            <br />
-            <span className="text-white/75">
-                11:00 AM – 6:15 PM
-            </span>
-        </p>
+                                            <p className="mt-1 text-sm leading-7 text-white">
+                                                We're here Monday – Saturday
+                                                <br />
+                                                <span className="text-white/75">
+                                                    11:00 AM – 6:15 PM
+                                                </span>
+                                            </p>
 
-        <p className="mt-1 text-sm leading-7 text-white">
-            Drop us a note anytime.
-        </p>
+                                            <p className="mt-1 text-sm leading-7 text-white">
+                                                Drop us a note anytime.
+                                            </p>
 
-        {/* ── PHONE ── */}
-        <a
-            href="tel:+919220788799"
-            className="
+                                            {/* ── PHONE ── */}
+                                            <a
+                                                href="tel:+919220788799"
+                                                className="
                 mt-3 flex items-center gap-2
                 text-sm text-white/90
                 transition-colors duration-300
                 hover:text-white
             "
-        >
-            <Phone size={14} strokeWidth={1.8} className="shrink-0" />
-            +91 9220788799
-        </a>
+                                            >
+                                                <Phone size={14} strokeWidth={1.8} className="shrink-0" />
+                                                +91 9220788799
+                                            </a>
 
-        {/* ── EMAIL ── */}
-        <a
-            href="mailto:care@solvestic.com"
-            className="
+                                            {/* ── EMAIL ── */}
+                                            <a
+                                                href="mailto:care@solvestic.com"
+                                                className="
                 mt-2 flex items-center gap-2
                 text-sm text-white/90
                 transition-colors duration-300
                 hover:text-white
             "
-        >
-            <Mail size={14} strokeWidth={1.8} className="shrink-0" />
-            care@solvestic.com
-        </a>
-    </div>
-</div>
+                                            >
+                                                <Mail size={14} strokeWidth={1.8} className="shrink-0" />
+                                                care@solvestic.com
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
