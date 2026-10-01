@@ -19,6 +19,16 @@ const FOUNDER_REELS = [
         id: 2,
         episode: "EPISODE 02",
         title: "Founder Diary Ep. 2",
+        description:
+            "The journey continues. Our founder shares insights and experiences from the early days of Solvestic.",
+        instagram: "https://www.instagram.com/reel/Dd6bz5cToQd/",
+        reelId: "Dd6bz5cToQd",
+        comingSoon: false,
+    },
+    {
+        id: 3,
+        episode: "EPISODE 03",
+        title: "Founder Diary Ep. 3",
         description: "Coming Soon",
         instagram: "",
         reelId: "",
@@ -65,8 +75,8 @@ export default function FounderReels() {
             {/* Horizontal Reel Slider */}
             <div
                 className="
-                       grid md:grid-cols-2
-                        md:gap-5 gap-10 max-w-4xl mx-auto md:px-0 px-8
+                       grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1
+                        gap-5 xl:px-20 md:px-8 px-8
                     "
             >
                 {FOUNDER_REELS.map((reel, index) => (
