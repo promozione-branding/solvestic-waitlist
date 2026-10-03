@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const problems = [
   "Sun Tan",
-  "Melasma",
+
   "Post Acne Marks",
   "Dullness",
   "Uneven Skin Tone",
