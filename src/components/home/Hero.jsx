@@ -115,7 +115,7 @@ export default function Hero() {
                                 className="absolute inset-0 h-full w-full object-cover"
                             >
                                 <source
-                                    src="/solvestic_water_realistic_1920x1080_download (1).mp4"
+                                    src="/solvestic.mp4"
                                     type="video/mp4"
                                 />
                             </video>
