@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 const ANNOUNCEMENTS = [
-    "FREE GIFT HAMPERS",
+    "DERMATOLOGICALLY TESTED",
     "SULPHATE & PARABEN FREE",
     "CRUELTY-FREE",
     "FDA-APPROVED",
