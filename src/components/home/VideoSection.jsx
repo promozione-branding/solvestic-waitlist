@@ -2,7 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Play } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
 
 const FOUNDER_REELS = [
     {
@@ -27,6 +31,15 @@ const FOUNDER_REELS = [
     },
     {
         id: 3,
+        episode: "EPISODE 03",
+        title: "Founder Diary Ep. 3",
+        description: "We’re building this for the skin concerns we actually see around us — pigmentation, tanning, dullness, dryness.",
+        instagram: "https://www.instagram.com/reel/DeHMP6Rz6LQ/",
+        reelId: "DeHMP6Rz6LQ",
+        comingSoon: false,
+    },
+    {
+        id: 4,
         episode: "EPISODE 03",
         title: "Founder Diary Ep. 3",
         description: "Coming Soon",
@@ -72,46 +85,50 @@ export default function FounderReels() {
                 </motion.div>
             </div>
 
-            {/* Horizontal Reel Slider */}
-            <div
-                className="
-                       grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1
-                        gap-5 xl:px-20 md:px-8 px-8
-                    "
-            >
-                {FOUNDER_REELS.map((reel, index) => (
-                    <motion.div
-                        key={reel.id}
-                        initial={{
-                            opacity: 0,
-                            y: 60,
-                        }}
-                        whileInView={{
-                            opacity: 1,
-                            y: 0,
-                        }}
-                        viewport={{
-                            once: true,
-                            amount: 0.15,
-                        }}
-                        transition={{
-                            duration: 0.8,
-                            delay: index * 0.15,
-                            ease: [0.22, 1, 0.36, 1],
-                        }}
-                        className="
-                                w-[82vw]
-                                min-w-[82vw]
-                                shrink-0
-                                sm:w-[46vw]
-                                sm:min-w-[46vw]
-                                lg:w-110
-                                lg:min-w-[21vw]
-                            "
-                    >
-                        <ReelCard reel={reel} />
-                    </motion.div>
-                ))}
+            <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
+                <Swiper
+                    modules={[Autoplay]}
+                    autoplay={{
+                        delay: 3500,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                    }}
+                   
+                    slidesPerView={1}
+                    spaceBetween={20}
+                    breakpoints={{
+                        768: {
+                            slidesPerView: 3,
+                        },
+                    }}
+                    className="!overflow-visible"
+                >
+                    {FOUNDER_REELS.map((reel, index) => (
+                        <SwiperSlide key={reel.id}>
+                            <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    y: 60,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                }}
+                                viewport={{
+                                    once: true,
+                                    amount: 0.15,
+                                }}
+                                transition={{
+                                    duration: 0.8,
+                                    delay: index * 0.15,
+                                    ease: [0.22, 1, 0.36, 1],
+                                }}
+                            >
+                                <ReelCard reel={reel} />
+                            </motion.div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
             </div>
 
         </section>
@@ -158,7 +175,7 @@ function ReelCard({ reel }) {
                             className="
                                 absolute
                                 inset-0
-                                w-full left-1/2 top-1/2 h-[500px] md:h-[660px] -translate-x-1/2 -translate-y-1/2
+                                w-full left-1/2 top-1/2 h-[500px] lg:h-[500px] xl:h-[630px] -translate-x-1/2 -translate-y-1/2
                             "
                             frameBorder="0"
                             scrolling="no"
