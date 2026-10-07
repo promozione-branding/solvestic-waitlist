@@ -19,7 +19,7 @@ export default function Home() {
       <Certifications />
       <FounderReels />
       <SocialCTA />
-      <AirPodsGiveaway />
+      {/* <AirPodsGiveaway /> */}
     </div>
   );
 }
